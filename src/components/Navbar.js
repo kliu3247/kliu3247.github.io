@@ -57,16 +57,16 @@ function Navbar() {
         <>
 
             <Container fluid = {true} data-aos="fade-up" data-aos-delay="0">
-                <a href = "/" >
+                <Link to = "/" >
                   <img class = "logopic" src = {logo} style={{marginTop: "15px", marginLeft: "18px", width: "70px", position: 'absolute'}} />
-                </a>
+                </Link>
 
                 <div style={{display:'flex', justifyContent:'flex-end'}}>
                 <ReactNavBar expand="md" bg="transparent" className= "navbar-dark" >
                     <ReactNavBar.Toggle className="border-0" aria-controls="navbar-toggle"/>
                     <ReactNavBar.Collapse id="navbar-toggle">
                     <Nav className="ml-auto navbar-dark">
-                        <a href = "/" className="nav-link nav-custom-dark" id = "work" >Work</a>
+                        <Link className="nav-link nav-custom-dark" id = "work" to = "/">Work</Link>
                         <Link className="nav-link nav-custom-dark" id = "about" to="/About">About</Link>
                         <Link className="nav-link nav-custom-dark" id = "resume" to="/Resume">Resume</Link>
                     </Nav>
