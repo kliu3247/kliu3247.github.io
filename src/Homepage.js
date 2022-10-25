@@ -118,7 +118,7 @@ function Homepage() {
             </div>
           </div>
 
-          <div id = "portfolio-grid" class="center row no-gutter" data-aos="fade-up" data-aos-delay="200">
+          <div id = "portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
               
               <ProfolioImage
                   link = "/#/Uber"

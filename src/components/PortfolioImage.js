@@ -11,7 +11,7 @@ import "../assets/css/style.css";
 
 const PortfolioImage = (props) => (
     <>
-        <div class= {props.category + " item col-sm-12 col-md-6 col-lg-5 mb-5 addPad"}>
+        <div class= {props.category + " item col-sm-12 col-md-6 col-lg-4 mb-5 addPad"}>
                 <a class= "item-wrap fancybox">
                     <a href={props.link}> 
                         <img class="img-fluid" src={props.image}/>

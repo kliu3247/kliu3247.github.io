@@ -66,7 +66,7 @@ function Navbar() {
                     <ReactNavBar.Toggle className="border-0" aria-controls="navbar-toggle"/>
                     <ReactNavBar.Collapse id="navbar-toggle">
                     <Nav className="ml-auto navbar-dark">
-                        <Link className="nav-link nav-custom-dark" id = "work" to = "/">Work</Link>
+                        <Link to = "/" className="nav-link nav-custom-dark" id = "work" >Work</Link>
                         <Link className="nav-link nav-custom-dark" id = "about" to="/About">About</Link>
                         <Link className="nav-link nav-custom-dark" id = "resume" to="/Resume">Resume</Link>
                     </Nav>

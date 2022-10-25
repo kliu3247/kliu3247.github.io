@@ -39,7 +39,7 @@ function Logitech () {
 
     useEffect(() => {
         // 👇️ scroll to top on page load
-        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        window.scrollTo({top: 0, left: 0, behavior: 'auto'});
       }, []);
 
     return (
@@ -53,11 +53,11 @@ function Logitech () {
 
         <div class = "space"></div>
 
-        <img src = {header}  class = "mt-5 cover-image" data-aos="fade-up" style = {{width:"110%"}}></img>
+        <img src = {header}  class = "mt-5 cover-image" data-aos="fade-up" data-aos-delay="100"style = {{width:"110%"}}></img>
         <img src = {headerMobile}  class = "mt-5 mobile-cover-image" data-aos="fade-up"></img>
         <img src = {medheader}  class = "mt-5 medium-cover-image" data-aos="fade-up"></img>
 
-        <section class = "small-screen">
+        <section class = "small-screen" data-aos="fade-up" data-aos-delay="100" >
             <section class="section">
             <div class="container">
 
@@ -65,40 +65,43 @@ function Logitech () {
                     <h4 class = "logitech-title mb-3">How Might We Embrace All Play</h4>
                     <div class = "logitech border mb-4"></div>
 
-                    <h2 class = "logitech-title">Problem Spaces</h2>
-                    <div class = "row">
+                        <h2 class = "logitech-title">Problem Spaces</h2>
+                        <div class = "row">
 
-                        <div class = "col-lg-6 col-md-6 col-12">
-                            <ul class="list-line mb-3">
-                                <li>Entry points to gaming communities and building permanence</li>
-                                <li>Promoting realness in people and interactions</li>
-                                <li>Forming community through in-game communication</li>
-                                <li>Promoting safe, inclusive, and accessible spaces</li>
-                                <li>Balancing between anonymity and connection</li>
-                            </ul>   
+                            <div class = "col-lg-6 col-md-6 col-12">
+                                <ul class="list-line mb-3">
+                                    <li>Entry points to gaming communities and building permanence</li>
+                                    <li>Promoting realness in people and interactions</li>
+                                    <li>Forming community through in-game communication</li>
+                                    <li>Promoting safe, inclusive, and accessible spaces</li>
+                                    <li>Balancing between anonymity and connection</li>
+                                </ul>   
+                            </div>
+
+                            <h5 class = "col-lg-4 col-md-5 col-12">Ultimately, HMW encourage conversations that lead to <i>friendship</i> and <i>community</i> beyond the game?</h5>
+                    </div>
+
+                    <div class = "space"></div>
+
+                    <div data-aos="fade-up" >
+                        <h4 class = "logitech-title mt-5 mb-3">User Research</h4>
+                        <div class = "logitech border mb-3"></div>
+                        <div class = "row">
+                            <img src = {secondary} class = "col-lg-3 col-md-3 col-6"></img>
+                            <img src = {survey} class = "col-lg-3 col-md-3 col-sm-6 col-6"></img>
+                            <img src = {ethnographic} class = "col-lg-3 col-md-3 col-sm-6 col-6"></img>
+                            <img src = {diary} class = "col-lg-3 col-md-3 col-sm-6 col-6"></img>
                         </div>
-
-                        <h5 class = "col-lg-4 col-md-5 col-12">Ultimately, HMW encourage conversations that lead to <i>friendship</i> and <i>community</i> beyond the game?</h5>
                     </div>
 
                     <div class = "space"></div>
 
-                    <h4 class = "logitech-title mt-5 mb-3">User Research</h4>
-                    <div class = "logitech border mb-3"></div>
-                    <div class = "row">
-                        <img src = {secondary} class = "col-lg-3 col-md-3 col-6"></img>
-                        <img src = {survey} class = "col-lg-3 col-md-3 col-sm-6 col-6"></img>
-                        <img src = {ethnographic} class = "col-lg-3 col-md-3 col-sm-6 col-6"></img>
-                        <img src = {diary} class = "col-lg-3 col-md-3 col-sm-6 col-6"></img>
+                    <div data-aos="fade-up">
+                        <h4 class = "logitech-title mt-5 mb-3" >Synthesis</h4>
+                        <div class = "logitech border mb-4"></div>
                     </div>
 
-                    <div class = "space"></div>
-
-
-                    <h4 class = "logitech-title mt-5 mb-3">Synthesis</h4>
-                    <div class = "logitech border mb-4"></div>
-
-                    <div class = "row mb-5">
+                    <div class = "row mb-5" data-aos="fade-up" >
                         <div class = "col-lg-3 col-md-3 col-12">
                             <h2 class = "logitech-title">Concept Map</h2>
                             <p>We constructed a concept map to connect recurring themes to gaming
@@ -110,7 +113,7 @@ function Logitech () {
                     <div class = "space"></div>
 
 
-                    <div class = "row mt-5">
+                    <div class = "row mt-5" data-aos="fade-up" >
                         <div class = "col-lg-4 col-md-4 col-12">
                             <h2 class = "logitech-title">Personas</h2>
                             <p>Our research revealed six main user groups that we represented using personas. 
@@ -128,46 +131,51 @@ function Logitech () {
                     <div class = "space"></div>
 
 
-                    <h4 class = "logitech-title mt-5 mb-3">Insights</h4>
-                    <div class = "logitech border mb-4"></div>
-                    <div class = "row">
-                        <img src = {insight1} class = "col-lg-3 col-6 mb-2"></img>
-                        <img src = {insight2} class = "col-lg-3 col-md-6 col-sm-6 col-6 mb-2"></img>
-                        <img src = {insight3} class = "col-lg-3 col-md-6 col-sm-6 col-6 mb-2"></img>
-                        <img src = {insight4} class = "col-lg-3 col-md-6 col-sm-6 col-6 mb-2"></img>
-                    </div>
-
-                    <div class = "space"></div>
-
-
-                    <h4 class = "logitech-title mt-5 mb-3">Ideation</h4>
-                    <div class = "logitech border mb-4"></div>
-                    <div class = "row mb-5">
-                        <div class = "col-lg-3 col-md-3 col-12">
-                            <p>Our first round of ideation resulted in two main concepts: community 
-                                rating systems and gaming stater packs. We then concept tested these
-                                 ideas to create our final prototypes.</p>
+                    <div data-aos="fade-up">
+                        <h4 class = "logitech-title mt-5 mb-3">Insights</h4>
+                        <div class = "logitech border mb-4"></div>
+                        <div class = "row">
+                            <img src = {insight1} class = "col-lg-3 col-6 mb-2"></img>
+                            <img src = {insight2} class = "col-lg-3 col-md-6 col-sm-6 col-6 mb-2"></img>
+                            <img src = {insight3} class = "col-lg-3 col-md-6 col-sm-6 col-6 mb-2"></img>
+                            <img src = {insight4} class = "col-lg-3 col-md-6 col-sm-6 col-6 mb-2"></img>
                         </div>
-                        <img src = {ideation} class = "col-lg-8 col-md-9 col-12"></img>
                     </div>
 
                     <div class = "space"></div>
 
 
-                    <h4 class = "logitech-title mt-5 mb-3">Final Solution</h4>
-                    <div class = "logitech border mb-4"></div>
-                    
-                    <h2>Neighborhood</h2>
-                    <div class = "row">
-                        <p class = "col-12">Neighborhood is a metaverse with a Discord integration. 
-                            By introducing the limitations of the physical world into a digital space,
-                            communities interact in fresh, immersive, playful ways. Whether it's jamming
-                            out at public concerts, designing interior spaces, or just chilling out 
-                            in a friend's private room, there's an opportunity to bond in every pixel 
-                            of Neighborhood. </p>
+                    <div data-aos="fade-up">
+                        <h4 class = "logitech-title mt-5 mb-3">Ideation</h4>
+                        <div class = "logitech border mb-4"></div>
+                        <div class = "row mb-5">
+                            <div class = "col-lg-3 col-md-3 col-12">
+                                <p>Our first round of ideation resulted in two main concepts: community 
+                                    rating systems and gaming stater packs. We then concept tested these
+                                    ideas to create our final prototypes.</p>
+                            </div>
+                            <img src = {ideation} class = "col-lg-8 col-md-9 col-12"></img>
+                        </div>
                     </div>
 
-                    <div class = "row mt-5 mb-5">
+                    <div class = "space"></div>
+
+                    <div data-aos="fade-up">
+                        <h4 class = "logitech-title mt-5 mb-3">Final Solution</h4>
+                        <div class = "logitech border mb-4"></div>
+                        
+                        <h2>Neighborhood</h2>
+                        <div class = "row">
+                            <p class = "col-12">Neighborhood is a metaverse with a Discord integration. 
+                                By introducing the limitations of the physical world into a digital space,
+                                communities interact in fresh, immersive, playful ways. Whether it's jamming
+                                out at public concerts, designing interior spaces, or just chilling out 
+                                in a friend's private room, there's an opportunity to bond in every pixel 
+                                of Neighborhood. </p>
+                        </div>
+                    </div>
+
+                    <div class = "row mt-5 mb-5" data-aos="fade-up">
                         <img src = {solution3} class = "col-lg-7 col-md-8 col-12"></img>
                         <div class ="col-lg-4 col-md-4 col-12 logitech-solution-description mt-3">
                             <h2>Private Virtual Space</h2>
@@ -178,7 +186,7 @@ function Logitech () {
                     <div class = "space"></div>
 
 
-                    <div class = "row mt-5 mb-5">
+                    <div class = "row mt-5 mb-5" data-aos="fade-up">
                         <img src = {solution2} class = "col-lg-7 col-md-8 col-12"></img>
 
                         <div class ="col-lg-4 col-md-4 col-12 logitech-solution-description mt-3">
@@ -192,7 +200,7 @@ function Logitech () {
                     <div class = "space"></div>
 
 
-                    <div class = "row mt-5 mb-5">
+                    <div class = "row mt-5 mb-5" data-aos="fade-up">
                         <img src = {solution1} class = "col-lg-7 col-md-8 col-12 "></img>
 
                         <div class ="col-lg-4 col-md-4 col-12 logitech-solution-description mt-3">
@@ -205,7 +213,7 @@ function Logitech () {
                     <div class = "space"></div>
 
 
-                    <div class = "row mt-5 mb-5">
+                    <div class = "row mt-5 mb-5" data-aos="fade-up">
                         <img src = {solution4} class = "col-lg-7 col-md-8 col-12 "></img>
 
                         <div class ="col-lg-4 col-md-4 col-12 logitech-solution-description mt-3">

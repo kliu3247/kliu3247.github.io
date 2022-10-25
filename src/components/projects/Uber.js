@@ -16,7 +16,7 @@ function Uber () {
 
     useEffect(() => {
         // 👇️ scroll to top on page load
-        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        window.scrollTo({top: 0, left: 0, behavior: 'auto'});
       }, []);
 
     return (
@@ -32,12 +32,12 @@ function Uber () {
 
         </div>
 
-        <img src = {header} data-aos="fade-up" class = "mt-5" style = {{width:"100%"}}></img>
+        <img src = {header} data-aos="fade-up" data-aos-delay="100" class = "mt-5" style = {{width:"100%"}}></img>
 
-        <section class="section">
+        <section class="section" data-aos="fade-up" data-aos-delay="100" >
         <div class="container">
 
-            <div data-aos="fade-up" class = "align-items-center">
+            <div data-aos="fade-up" data-aos-delay="100" class = "align-items-center">
                 <h4 class = "uber-title mb-3">Overview</h4>
                 <div class = "border mb-4"></div>
                 <p class = "col-md-7 mb-5" >I worked end-to-end on a machine learning model with over 95% accuracy 
@@ -48,10 +48,10 @@ function Uber () {
 
             
 
-            <div class="site-section pb-0">
+            <div class="site-section pb-0" data-aos="fade-up">
                 <div class="container mt-5 mb-5">
                     <div class="row align-items-stretch">
-                        <div class="col-md-6" data-aos="fade-up">
+                        <div class="col-md-6">
                             <img src={overview} alt="Image" class="img-fluid"/>
                         </div>
                         <div class="col-md-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
@@ -70,7 +70,7 @@ function Uber () {
                     </div>
                 </div>
 
-                <div class="container mt-5 mb-5">
+                <div class="container mt-5 mb-5" data-aos="fade-up">
                     <div class="row align-items-stretch">
                         <div class="col-md-6" data-aos="fade-up">
                             <img src={impact} alt="Image" class="img-fluid"/>
@@ -93,7 +93,7 @@ function Uber () {
                     </div>
                 </div>
 
-                <div class="container mt-5 mb-5">
+                <div class="container mt-5 mb-5" data-aos="fade-up">
                     <div class="row align-items-stretch">
                         <div class="col-md-6" data-aos="fade-up">
                             <img src={approach} alt="Image" class="img-fluid"/>
@@ -117,7 +117,7 @@ function Uber () {
                     </div>
                 </div>
 
-                <div class="container mt-5 mb-5">
+                <div class="container mt-5 mb-5" data-aos="fade-up">
                     <div class="mt-5 row align-items-stretch">
                         <div class="col-md-6" data-aos="fade-up">
                             <img src={takeaways} alt="Image" class="img-fluid"/>
