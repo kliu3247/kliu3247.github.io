@@ -15,12 +15,12 @@ function Intro () {
             <h1>Hello, I'm Kelly</h1>
             <img src = {largestar} class = "hellostar"/>
             <div class="row justify-content-center ">
-                <h2 class = "col-lg-6 mt-1">I'm a Designer, Developer &amp; Engineering Student @ UC Berkeley</h2>
+                <h2 class = "col-lg-6 mt-1">I'm a Machine Learning Engineer @ Uber solving human-centered GenAI problems</h2>
             </div>
 
             <div class="row justify-content-center current-efforts">
                 <img src = {leftstar} class = "leftstar"/>
-                <h3 class = "current-efforts-text col-lg-7 mt-3">I create <i>user-obsessed products</i> with Human Centered Design and Engineering. My current efforts include...</h3>
+                <h3 class = "current-efforts-text col-lg-7 mt-3"> Previously Designer, Developer &amp; Engineering Student @ UC Berkeley. My past efforts efforts include...</h3>
             </div>
             
 
