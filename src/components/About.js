@@ -23,19 +23,13 @@ function About() {
                         </div>
 
                         <div class=" mb-2 mb-md-0" data-aos="fade-up">
-                            <p> I’m Kelly! I am an aspiring product designer who loves to innovate, explore,
-                                and empathize. I seek to create designs that are user-centric, creative, 
-                                and impactful.</p>
-                            <p>My specialities lie in the technology space, where I often 
-                                combine my computer science and electrical engineering background and 
-                                my experiences as a human-centered designer.</p>
-                            <h6>I am currently seeking new grad, full-time positions!</h6>
-                        </div>
-                    </div>
-
-                    <div class = "col-md-7 col-lg-4">
-                        <div class="row mb-2 align-items-end" data-aos="fade-up">
-                            <p><img src={aboutMePic} alt="Image" class="img-fluid"  data-aos="fade-up" data-aos-delay="100"/></p>
+                            <p> I’m Kelly! I aspire to innovate, explore, and empathize in everything I do.
+                                I seek to create designs that are user-centric, creative,
+                                and impactful, with an engineering driven mindset. </p>
+                            <p>My specialities lie in the technology space, where I often
+                                combine my computer science and electrical engineering background and
+                                my experiences as a human-centered design consultant.</p>
+                            <h6>I am currently seeking new & interesting opportunities!</h6>
                         </div>
                     </div>
                     
